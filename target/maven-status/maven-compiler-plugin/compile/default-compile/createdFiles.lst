@@ -1,0 +1,6 @@
+com/elipcero/customerschool/configuration/OAuth2ResourceServerConfiguration.class
+com/elipcero/customerschool/CustomerSchoolApplication.class
+com/elipcero/customerschool/domain/CustomerDescriptor.class
+com/elipcero/customerschool/domain/Customer.class
+com/elipcero/customerschool/configuration/CustomerDataConfiguration.class
+com/elipcero/customerschool/repositories/CustomerRepository.class

@@ -1,0 +1,6 @@
+/home/dsuarez/git/DanceSchool/CustomerSchool/src/main/java/com/elipcero/customerschool/domain/Customer.java
+/home/dsuarez/git/DanceSchool/CustomerSchool/src/main/java/com/elipcero/customerschool/configuration/CustomerDataConfiguration.java
+/home/dsuarez/git/DanceSchool/CustomerSchool/src/main/java/com/elipcero/customerschool/CustomerSchoolApplication.java
+/home/dsuarez/git/DanceSchool/CustomerSchool/src/main/java/com/elipcero/customerschool/domain/CustomerDescriptor.java
+/home/dsuarez/git/DanceSchool/CustomerSchool/src/main/java/com/elipcero/customerschool/configuration/OAuth2ResourceServerConfiguration.java
+/home/dsuarez/git/DanceSchool/CustomerSchool/src/main/java/com/elipcero/customerschool/repositories/CustomerRepository.java
