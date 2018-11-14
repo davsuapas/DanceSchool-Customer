@@ -144,6 +144,14 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
+		<repository>
+			<id>s</id>
+			<name>${distribution.management.release.id}</name>
+			<url>${distribution.management.release.url}</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 
 	<profiles>
