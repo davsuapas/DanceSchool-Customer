@@ -23,13 +23,13 @@ spec:
           value: "{{systemProps}}"
         livenessProbe:
           httpGet:
-            path: /actuator/health
+            path: /health
             port: 8081
           initialDelaySeconds: 40
           periodSeconds: 5
         readinessProbe:
           httpGet:
-            path: /actuator/health
+            path: /health
             port: 8081
           initialDelaySeconds: 40
           periodSeconds: 5
