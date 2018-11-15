@@ -6,8 +6,8 @@ test:
   # list of required services
   services:
   - type: eureka
-    name: DanceSchool-Eureka
+    name: eureka-school
     coordinates: danceschool/eureka-school:latest
   - type: infrastructure
-    name: DanceSchool-Configuration
+    name: configuration-school
     coordinates: danceschool/configuration-school:latest
