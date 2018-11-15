@@ -202,7 +202,7 @@
 							<env>
 								<SYSTEM_PROPS>-Dfoo=bar</SYSTEM_PROPS>
 							</env>
-							<entryPoint>["sh", "-c", "java $${SYSTEM_PROPS} -Djava.security.egd=file:/dev/./urandom -Dspring.profiles.active=kubernetes -jar /${project.build.finalName}.jar"]</entryPoint>
+							<entryPoint>["sh", "-c", "java $${SYSTEM_PROPS} -Djava.security.egd=file:/dev/./urandom -jar /${project.build.finalName}.jar"]</entryPoint>
 							<resources>
 								<resource>
 									<targetPath>/</targetPath>
@@ -244,5 +244,28 @@
 				</plugins>
 			</build>
 		</profile>
+		<!-- [PIPELINE] -->
+		<profile>
+			<id>smoke</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.18.1</version>
+						<configuration>
+							<includes>
+								<include>smoke/**/*Tests.java</include>
+								<include>smoke/**/*Test.java</include>
+							</includes>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- [PIPELINE] -->
 	</profiles>
 </project>

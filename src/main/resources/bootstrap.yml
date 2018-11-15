@@ -1,3 +1,7 @@
+management:
+  endpoints:
+    web.base-path: /
+
 spring:
   application:
     name: customerschool
@@ -17,6 +21,15 @@ spring:
 
 spring:
   profiles: kubernetes
+
+  cloud:
+    config:
+      uri: http://configuration-school:8888
+
+---
+
+spring:
+  profiles: smoke
 
   cloud:
     config:
