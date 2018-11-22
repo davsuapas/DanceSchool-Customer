@@ -25,3 +25,12 @@ spring:
   cloud:
     config:
       uri: http://configuration-school:8888
+
+---
+
+spring:
+  profiles: smoke
+
+  cloud:
+    config:
+      uri: http://configuration-school:8888

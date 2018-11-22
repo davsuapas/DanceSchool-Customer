@@ -11,3 +11,12 @@ test:
   - type: infrastructure
     name: configuration-school
     coordinates: danceschool/configuration-school:latest
+stage:
+  # list of required services
+  services:
+  - type: eureka
+    name: eureka-school
+    coordinates: danceschool/eureka-school:latest
+  - type: infrastructure
+    name: configuration-school
+    coordinates: danceschool/configuration-school:latest
